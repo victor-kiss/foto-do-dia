@@ -35,7 +35,7 @@ export default function footer() {
               </Section>
               <Section hoverColor="#0E1013" width="50%" margin="5px 5px">
                   <h2>My Github</h2>
-                  <p>See my <a href="http://" target="_blank" rel="noopener">github</a> for more projects, you'll like =)</p>
+                  <p>See my <a href="https://github.com/victor-kiss" target="_blank" rel="noopener">github</a> for more projects, you'll like =)</p>
                  
               </Section>
             </FlexDiv>
