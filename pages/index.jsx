@@ -9,11 +9,6 @@ import FlexDiv from '../paterns/FlexDiv'
 
 import PhotoComponent from '../data/PhotoComponent'
 
-<<<<<<< HEAD
-
-=======
-//feito no backup
->>>>>>> backup
 export default function Home() {
   return (
     <>
