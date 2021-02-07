@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import FlexDiv from '../paterns/FlexDiv'
-import Section from '../paterns/Section'
+import FlexDiv from '../patterns/FlexDiv'
+import Section from '../patterns/Section'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faHeart} from '@fortawesome/free-solid-svg-icons'
 

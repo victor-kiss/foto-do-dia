@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState,useEffect} from 'react'
-import Section from '../paterns/Section'
+import Section from '../patterns/Section'
 import ErrorPage from '../pages/ErrorPage'
 
 export default function PhotoComponent() {
