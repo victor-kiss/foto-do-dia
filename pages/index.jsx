@@ -9,7 +9,10 @@ import FlexDiv from '../paterns/FlexDiv'
 
 import PhotoComponent from '../data/PhotoComponent'
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ce38e5210026f50e4e4a4421bed8a4b198d2aebc
 export default function Home() {
   return (
     <>
