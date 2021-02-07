@@ -1,8 +1,11 @@
 const withImages = require("next-images")
 
+module.exports={
+  trailingSlash:true,
+}
 
 module.exports={
-     async redirects() {
+     async redirects(){
       return [
         {
           source: '/',
@@ -11,7 +14,6 @@ module.exports={
         },
       ]
     },
-    trailingSlash:true,
 }
 
 module.exports = withImages({
