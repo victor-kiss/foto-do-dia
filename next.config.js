@@ -2,7 +2,6 @@ const withImages = require("next-images")
 
 
 module.exports={
-    trailingSlash:true,
      async redirects() {
       return [
         {
@@ -12,6 +11,7 @@ module.exports={
         },
       ]
     },
+    trailingSlash:true,
 }
 
 module.exports = withImages({
