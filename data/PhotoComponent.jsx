@@ -7,20 +7,20 @@ export default function PhotoComponent() {
 
     const [photoData, setPhotoData] = useState(null)
 
-    async function getPhotoData(){
-
-        try {
-            const response = await fetch("https://api.nasa.gov/planetary/apod?api_key=DFredGM4MzYpa2GVB44FarGcfMmkoe3KgbUvgVHE")
-
-            const data = await response.json()
-            setPhotoData(data)
-        } catch(error){
-            console.error(error)
-        }
-    }
-
     useEffect(()=>{
         getPhotoData()
+        async function getPhotoData(){
+
+            try {
+                const response = await fetch("https://api.nasa.gov/planetary/apod?api_key=DFredGM4MzYpa2GVB44FarGcfMmkoe3KgbUvgVHE")
+    
+                const data = await response.json()
+                setPhotoData(data)
+            }
+            catch(error){
+                console.error(error)
+            }
+        }
     },[])
 
     if(!photoData) return <ErrorPage/>
