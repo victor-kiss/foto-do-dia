@@ -1,34 +1,30 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Foto do dia
+Esse é um site simples feito em Next js juntamente com styled components, o site foi usado como forma de aprendizado do Next js, styled components e alguns padrões de projeto e consumo de api. O site foi feito durante uma noite em que eu estava entediado.
 
-## Getting Started
+<img src="./thumbnail.png" alt="thumbnail do site"/>
 
-First, run the development server:
+## Requisitos
 
-```bash
-npm run dev
-# or
-yarn dev
+-Node js
+- Editor de código para modificar e visualizar o projeto.
+
+## Instalação
+
+Primeiramente, para instalar baixe o zip do projeto e clique em extrair, abra a pasta do projeto em um editor de códigos e rode o comando:
+
+```
+npm install
+# ou
+yarn add
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) com 
+seu navegador para ver os resultados.
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+Para modificar o projeto basta ir alterando os arquivos. O css de componentes como Footer ficam dentro do próprio componente, a estilização é feita a partir do styled components. 
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+## OBS
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+No arquivo global.js fica o estilo de algumas classes já definidas e também estilos de elementos como h1, h2, p dentre outros.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+O arquivo "_document.jsx" se refere a renderização do site, com ele é aplicado o server side redering e a página já chega estilizada no front end, comportamento esse que não é padrão.
