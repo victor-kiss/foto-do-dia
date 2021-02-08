@@ -1,7 +1,7 @@
 import React from 'react'
 import {useState,useEffect} from 'react'
 import Section from '../patterns/Section'
-import ErrorPage from '../pages/ErrorPage'
+
 
 export default function PhotoComponent() {
 
@@ -23,7 +23,7 @@ export default function PhotoComponent() {
         }
     },[])
 
-    if(!photoData) return <ErrorPage/>
+    if(!photoData) return <div><h2>Loading...</h2></div>
     return (
         <Section>
             <h3>{photoData.title}</h3>
