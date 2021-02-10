@@ -28,7 +28,11 @@ export default function PhotoComponent() {
         <Section>
             <h3>{photoData.title}</h3>
             <h4>Date: {photoData.date}</h4>
-            <img src={photoData.url} alt={photoData.title} width="80%"height="auto" className="image"/>
+            {
+               photoData.url.includes('www.youtube.com')
+               ? <iframe src={photoData.url} title={photoData.title}></iframe> : 
+               <img src={photoData.url} alt={photoData.title}  className="image" width="80%"/>
+            }
 
             <p>{photoData.explanation}</p>
         </Section>
