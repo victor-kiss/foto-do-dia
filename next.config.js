@@ -1,7 +1,7 @@
 const withImages = require("next-images")
 
 module.exports={
-  trailingSlash:true,
+    trailingSlash:true,
 }
 
 module.exports = withImages({
