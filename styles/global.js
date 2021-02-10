@@ -24,7 +24,7 @@ const global = createGlobalStyle`
           margin:0px 2px;
      }
      .fa-rocket{
-          font-size:3.0em;
+          font-size:3.6em;
      }
      .image{
           position:relative;
@@ -32,6 +32,18 @@ const global = createGlobalStyle`
         @media(max-width:576px){
              width:100%;
         }
+     }
+
+     iframe{
+          border:none;
+          display:block;
+          width:100%;
+          height:300px;
+
+          @media(max-width:576px){
+               width:100%;
+               height:100%;
+          }
      }
 `
 
